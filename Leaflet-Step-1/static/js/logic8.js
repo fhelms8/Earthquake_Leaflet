@@ -17,11 +17,6 @@ var url = "https://earthquake.usgs.gov/fdsnws/event/1/query.geojson?starttime=20
 // Create a function to pull data from url 
 d3.json(url).then(EqData => {
     var features = EqData.features;
-        // var depth = earthquake.geometry.coordinates[2];
-        // var title = earthquake.properties.title;
-        // var time = earthquake.properties.time;
-        // var lat = earthquake.geometry.coordinates[0];
-        // var lon = earthquake.geometry.coordinates[1];
 
     
         // Create function to hold map style
@@ -73,7 +68,7 @@ d3.json(url).then(EqData => {
         },
         style: mapStyle,
         onEachFeature: function(features, layer) {
-            layer.bindPopup("Magnitude Depth: " + features.geometry.coordinates[2] + "<br> Location: " + features.properties.title);
+            layer.bindPopup("Magnitude Depth: " + features.geometry.coordinates[2] + "<br> Location: " + features.properties.title + new Date((features.properties.time)));
         }
     }).addTo(myMap);
 
