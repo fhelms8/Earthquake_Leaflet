@@ -9,4 +9,4 @@ The colors vary depending on the depth of each earthquake.
 The radius's vary depending on the magnitude size of each earthquake. 
 If you click on each circle, it will display the location, magnitude size, depth, and the time of each earthquake. 
 
-<img src=https://raw.githubusercontent.com/fhelms8/leaflet-challenge/main/Images/myleaflet.png</img>
+<img>https://raw.githubusercontent.com/fhelms8/leaflet-challenge/main/Images/myleaflet.png</img>
